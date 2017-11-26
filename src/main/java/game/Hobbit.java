@@ -16,4 +16,4 @@ public class Hobbit extends Character {
     void kick(Character c) {
         toCry();
     }
-}
+} 

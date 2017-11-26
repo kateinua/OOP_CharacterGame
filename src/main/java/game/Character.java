@@ -7,7 +7,7 @@ public abstract class Character {
     private int hp;
     private String name;
 
-    public Character() {}
+    public Character() { }
 
     protected Character(int minPower, int maxPower, int minHp, int maxHp) {
         power = new Random().nextInt(maxPower - minPower + 1) + minPower;
@@ -24,7 +24,7 @@ public abstract class Character {
     public int getHp() {
         return hp;
     }
-    public void setHp(int hp){
+    public void setHp(int hp) {
         this.hp = hp;
     }
     public int getPower(){

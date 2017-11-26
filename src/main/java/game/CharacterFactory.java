@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class CharacterFactory {
     private static final int NUM = 4;
-    public CharacterFactory() {}
+    public CharacterFactory() { }
     static Character createCharacter() {
         int code = new Random().nextInt(NUM);
         Character ch;
