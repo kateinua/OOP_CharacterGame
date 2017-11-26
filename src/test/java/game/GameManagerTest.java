@@ -19,7 +19,7 @@ public class GameManagerTest {
     public void testHobbits() {
         Hobbit h1 = new Hobbit();
         Hobbit h2 = new Hobbit();
-        new GameManager().fight(h1, h1);
+        new GameManager().fight(h1, h2);
         assertTrue(h1.isAlive());
         assertTrue(h2.isAlive());
     }
