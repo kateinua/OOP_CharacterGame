@@ -8,7 +8,7 @@ public class KnightTest {
     @Test
     public void testKnight() {
         Knight k = new Knight();
-        assertThat(k.getHp()).isBetween(12, 21);
+        assertThat(k.getHp()).isBetween(2, 21);
         assertThat(k.getPower()).isBetween(2, 12);
         assertEquals(k.name, "Knight");
     }
