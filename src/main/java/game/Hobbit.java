@@ -1,10 +1,11 @@
 package game;
 
 public class Hobbit extends Character {
+    static final int HP = 3;
     public Hobbit() {
-        setHp(3);
+        setHp(HP);
         setPower(0);
-        this.name = "Hobbit";
+        setName("Hobbit");
     }
 
     private void toCry(){

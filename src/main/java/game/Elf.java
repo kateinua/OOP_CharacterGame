@@ -1,10 +1,12 @@
 package game;
 
-public class Elf extends Character{
+public class Elf extends Character {
+    static final int HP = 10;
+    static final int POWER = 10;
     public Elf() {
-        setHp(10);
-        setPower(10);
-        this.name = "Elf";
+        setHp(HP);
+        setPower(POWER);
+        setName("Elf");
     }
 
     @Override

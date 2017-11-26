@@ -3,13 +3,13 @@ package game;
 import java.util.Random;
 
 public abstract class Character {
-    protected int power;
-    protected int hp;
-    public String name;
+    private int power;
+    private int hp;
+    private String name;
 
-    public Character(){}
+    public Character() {}
 
-    protected Character(int minPower, int maxPower, int minHp, int maxHp){
+    protected Character(int minPower, int maxPower, int minHp, int maxHp) {
         power = new Random().nextInt(maxPower - minPower + 1) + minPower;
         hp = new Random().nextInt(maxHp - minHp + 1) + minHp;
 
@@ -32,5 +32,11 @@ public abstract class Character {
     }
     public void setPower(int power){
         this.power = power;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
     }
 }

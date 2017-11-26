@@ -3,11 +3,12 @@ package game;
 import java.util.Random;
 
 public class CharacterFactory {
-    public CharacterFactory(){}
-    static Character createCharacter(){
-        int code = new Random().nextInt(4);
+    static final int NUM = 4;
+    public CharacterFactory() {}
+    static Character createCharacter() {
+        int code = new Random().nextInt(NUM);
         Character ch;
-        switch (code){
+        switch (code) {
             case 0:
                 ch = new Hobbit();
                 break;
