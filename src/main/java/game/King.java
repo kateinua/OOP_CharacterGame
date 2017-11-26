@@ -3,10 +3,10 @@ package game;
 import java.util.Random;
 
 public class King extends Character {
-    static final int MIN_POWER = 5;
-    static final int MAX_POWER = 15;
-    static final int MIN_HP = 5;
-    static final int MAX_HP = 15;
+    private static final int MIN_POWER = 5;
+    private static final int MAX_POWER = 15;
+    private static final int MIN_HP = 5;
+    private static final int MAX_HP = 15;
 
     public King() {
 
@@ -16,7 +16,7 @@ public class King extends Character {
 
     @Override
     void kick(Character c) {
-        int strength = new Random().nextInt(this.power-1)+1;
-        c.hp -= strength;
+        int strength = new Random().nextInt(this.getPower() - 1) + 1;
+        c.setHp(c.getHp() - strength);
     }
 }

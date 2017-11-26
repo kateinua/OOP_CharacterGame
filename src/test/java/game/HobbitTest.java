@@ -10,7 +10,7 @@ public class HobbitTest {
         Hobbit h = new Hobbit();
         assertEquals(h.getHp(), 3);
         assertEquals(h.getPower(), 0);
-        assertEquals(h.name, "Hobbit");
+        assertEquals(h.getName(), "Hobbit");
         assertEquals(h.isAlive(), true);
         h.setHp(0);
         assertEquals(h.isAlive(), false);

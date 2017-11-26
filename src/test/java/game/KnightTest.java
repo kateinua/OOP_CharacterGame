@@ -10,7 +10,7 @@ public class KnightTest {
         Knight k = new Knight();
         assertThat(k.getHp()).isBetween(2, 21);
         assertThat(k.getPower()).isBetween(2, 12);
-        assertEquals(k.name, "Knight");
+        assertEquals(k.getName(), "Knight");
     }
     @Test
     public void kick() throws Exception {

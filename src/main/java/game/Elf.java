@@ -1,8 +1,8 @@
 package game;
 
 public class Elf extends Character {
-    static final int HP = 10;
-    static final int POWER = 10;
+    private static final int HP = 10;
+    private static final int POWER = 10;
     public Elf() {
         setHp(HP);
         setPower(POWER);
@@ -11,10 +11,10 @@ public class Elf extends Character {
 
     @Override
     void kick(Character c) {
-        if (c.power < this.power) {
-            c.hp = 0;
+        if (c.getPower() < this.getPower()) {
+            c.setHp(0);
         } else {
-            c.hp -= 1;
+            c.setHp(c.getHp() - 1);
         }
     }
 }

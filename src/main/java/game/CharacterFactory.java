@@ -3,7 +3,7 @@ package game;
 import java.util.Random;
 
 public class CharacterFactory {
-    static final int NUM = 4;
+    private static final int NUM = 4;
     public CharacterFactory() {}
     static Character createCharacter() {
         int code = new Random().nextInt(NUM);

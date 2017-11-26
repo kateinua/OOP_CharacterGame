@@ -1,7 +1,7 @@
 package game;
 
 public class Hobbit extends Character {
-    static final int HP = 3;
+    private static final int HP = 3;
     public Hobbit() {
         setHp(HP);
         setPower(0);

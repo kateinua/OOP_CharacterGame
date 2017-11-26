@@ -10,7 +10,7 @@ public class KingTest {
         King k = new King();
         assertThat(k.getHp()).isBetween(5, 15);
         assertThat(k.getPower()).isBetween(5, 15);
-        assertEquals(k.name, "King");
+        assertEquals(k.getName(), "King");
     }
     @Test
     public void kick() throws Exception {

@@ -10,7 +10,7 @@ public class ElfTest {
         Elf e = new Elf();
         assertEquals(e.getHp(), 10);
         assertEquals(e.getPower(), 10);
-        assertEquals(e.name, "Elf");
+        assertEquals(e.getName(), "Elf");
     }
 
     @Test
