@@ -10,6 +10,7 @@ public class GameManagerTest {
 
         Character c1 = CharacterFactory.createCharacter();
         Character c2 = CharacterFactory.createCharacter();
+        new GameManager().fight(h1, h1);
         if (!(c1.name == "Hobbit" && c2.name == "Hobbit")){
             assertFalse(c1.isAlive() && c2.isAlive());
         }
