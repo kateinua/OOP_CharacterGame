@@ -27,16 +27,16 @@ public abstract class Character {
     public void setHp(int hp) {
         this.hp = hp;
     }
-    public int getPower(){
+    public int getPower() {
         return power;
     }
-    public void setPower(int power){
+    public void setPower(int power) {
         this.power = power;
     }
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 }

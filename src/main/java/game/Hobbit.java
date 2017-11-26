@@ -8,7 +8,7 @@ public class Hobbit extends Character {
         setName("Hobbit");
     }
 
-    private void toCry(){
+    private void toCry() {
     System.out.println("Crying");
     }
 
@@ -16,4 +16,4 @@ public class Hobbit extends Character {
     void kick(Character c) {
         toCry();
     }
-} 
+}
