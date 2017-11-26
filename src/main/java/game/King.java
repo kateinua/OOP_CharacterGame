@@ -10,7 +10,7 @@ public class King extends Character{
 
     @Override
     void kick(Character c) {
-        int strength = new Random().nextInt(this.power);
+        int strength = new Random().nextInt(this.power-1)+1;
         c.hp -= strength;
     }
 }
